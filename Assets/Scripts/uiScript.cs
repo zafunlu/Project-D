@@ -17,7 +17,7 @@ public class uiScript : MonoBehaviour
         
     }
 
-    public void Load(string name)
+    public void SceneLoad(string name)
     {
         SceneManager.LoadScene(name);
     }
