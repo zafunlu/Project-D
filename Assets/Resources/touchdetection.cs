@@ -18,9 +18,9 @@ public class touchdetection : MonoBehaviour
 
     void OnMouseDown()
     {
-        GameObject canvasObject = GameObject.Find("Canvas");
-        UpdateUIScript UIScript = canvasObject.GetComponent<UpdateUIScript>();
-        UIScript.sTile = gameObject;
+        //GameObject canvasObject = GameObject.Find("Canvas");
+        //UpdateUIScript UIScript = canvasObject.GetComponent<UpdateUIScript>();
+        //UIScript.sTile = gameObject;
         //var s = canvasObject.GetComponent<UpdateUIScript>();
         //s.sTile = this;
         if (cycleInt < 0)
