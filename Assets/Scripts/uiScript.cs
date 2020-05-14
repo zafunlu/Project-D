@@ -22,8 +22,4 @@ public class uiScript : MonoBehaviour
         SceneManager.LoadScene(name);
     }
 
-    public void LoadOverzichtVerwijderd()
-    {
-        SceneManager.LoadScene("OverzichtVerwijderd");
-    }
 }

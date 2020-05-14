@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Overzicht.unity
     guid: 298d4dc85048d43d38521c70e2b84df9
+  - enabled: 1
+    path: Assets/Scenes/OverzichtVerwijderd.unity
+    guid: b986ccd97f1ac4cfeaf9a7f50a860e13
+  - enabled: 1
+    path: Assets/Scenes/OverzichtVerwijderen.unity
+    guid: c4cef5a7fbb2c47e2a4a734111adabd1
   m_configObjects: {}
