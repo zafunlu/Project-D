@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OverzichtVerwijderen.unity
     guid: c4cef5a7fbb2c47e2a4a734111adabd1
+  - enabled: 1
+    path: Assets/Scenes/NieuwIdee.unity
+    guid: be401efb4ac7041d8bb4ab44cdd9b824
+  - enabled: 1
+    path: Assets/Scenes/NieuwIdeeConfirm.unity
+    guid: 1dc83905f28b44661a272a8e7f84232c
+  - enabled: 1
+    path: Assets/Scenes/NieuwIdeeEdit.unity
+    guid: 0988846342c824beaa41d7083b313ef2
   m_configObjects: {}
