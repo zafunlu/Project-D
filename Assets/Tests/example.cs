@@ -1,28 +1,34 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using NUnit.Framework;
-using UnityEngine;
-using UnityEngine.TestTools;
+﻿using NUnit.Framework;
 
 namespace Tests
 {
-    public class example
+    public class Example
     {
-        // A Test behaves as an ordinary method
         [Test]
-        public void exampleSimplePasses()
+        public void ExampleSimplePasses()
         {
-            // Use the Assert class to test conditions
+            Assert.Pass("This test Passes");
         }
 
-        // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
-        // `yield return null;` to skip a frame.
-        [UnityTest]
-        public IEnumerator exampleWithEnumeratorPasses()
+        [Test]
+        public void ExampleSimpleFails()
         {
-            // Use the Assert class to test conditions.
-            // Use yield to skip a frame.
-            yield return null;
+            Assert.Fail("This test should fail");
+        }
+
+        [Test]
+        public void ExampleConditionalPass()
+        {
+            const int a = 100;
+            Assert.Greater(a, 99);
+        }
+
+        [Test]
+        public void ExampleTestScript()
+        {
+            int expected = 48;
+            int result = UnitTestBehaviour.SimpleCalc(5);
+            Assert.AreEqual(expected, result);
         }
     }
 }
