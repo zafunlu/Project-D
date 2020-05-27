@@ -18,7 +18,7 @@ namespace Tests
         }
 
         [UnityTest]
-        public IEnumerator LoginSceneComponentsCheck()
+        public IEnumerator LoginComponentsCheck()
         {
             yield return null;
             
