@@ -16,8 +16,7 @@ namespace Tests
         {
             EditorSceneManager.OpenScene("Assets/Scenes/Login.unity");
         }
-        
-        
+
         [UnityTest]
         public IEnumerator LoginSceneComponentsCheck()
         {
@@ -42,8 +41,6 @@ namespace Tests
             Assert.NotNull(btn);
             
             //TODO check other functionality when implemented
-            
-            Assert.Pass();
         }
     }
 }
