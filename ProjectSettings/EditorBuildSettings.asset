@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NieuwIdeeEdit.unity
     guid: 0988846342c824beaa41d7083b313ef2
+  - enabled: 1
+    path: Assets/Scenes/ARScene.unity
+    guid: 7ec7abf667b3cd44287f9cb5326a914a
   m_configObjects: {}
