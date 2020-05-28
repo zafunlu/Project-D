@@ -26,7 +26,7 @@ public class UpdateUIScript : MonoBehaviour
         Button btnRoL = rotateLButton.GetComponent<Button>();
         btnRoL.onClick.AddListener(RotateL);
 
-        Button btnRoR = rotateLButton.GetComponent<Button>();
+        Button btnRoR = rotateRButton.GetComponent<Button>();
         btnRoR.onClick.AddListener(RotateR);
 
         Button btnRe = changeObjectButton.GetComponent<Button>();
