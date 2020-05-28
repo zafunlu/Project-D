@@ -58,7 +58,6 @@ public class UpdateUIScript : MonoBehaviour
         if (td.spawnedO == null)
         {
             td.spawnedO = Instantiate(models[1], td.spawnPos.position, td.spawnPos.rotation);
-            changeObjectTextField.text = "Verwijder";
         }
         else
         {
@@ -94,11 +93,11 @@ public class UpdateUIScript : MonoBehaviour
     {
         if (sTile.GetComponent<touchdetection>().spawnedO == null)
         {
-            changeObjectTextField.text = "Verwijder";
+            changeObjectTextField.text = "Plaats";
         }
         else
         {
-            changeObjectTextField.text = "Plaats";
+            changeObjectTextField.text = "Verwijder";
         }
     }
 }

@@ -789,7 +789,10 @@ MonoBehaviour:
   objectButton: {fileID: 1554231996}
   changeObjectTextField: {fileID: 1995820946}
   objectTextField: {fileID: 209874675}
-  models: []
+  models:
+  - {fileID: 6218123981758566550, guid: 55910884a85af0a4a8254a7f49566aa2, type: 3}
+  - {fileID: 3286944204568690013, guid: b0d43e588d12a6e41a4fdd7faa94dd4c, type: 3}
+  modelSelected: {fileID: 0}
   defMat: {fileID: 2100000, guid: 636cbb0addb3e9444b3e3af59d144eaa, type: 2}
   selMat: {fileID: 2100000, guid: c88ed1ac85ec952418a4fa10da223dba, type: 2}
 --- !u!1001 &1260618551

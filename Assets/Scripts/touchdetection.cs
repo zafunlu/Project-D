@@ -6,7 +6,6 @@ public class touchdetection : MonoBehaviour
 {
     public Transform spawnPos;
     public GameObject[] models;
-    public int cycleInt;
     public GameObject spawnedO;
     public Object parentTile;
     public Renderer parentTileRenderer;
@@ -51,7 +50,7 @@ public class touchdetection : MonoBehaviour
     public void deleteTile()
     {
         Destroy(spawnedO);
-        cycleInt = 0;
+        spawnedO = null;
     }
 
     public void rotateLeft()
