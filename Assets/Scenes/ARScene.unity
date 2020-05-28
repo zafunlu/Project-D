@@ -327,7 +327,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 39.56996, y: -248.2}
+  m_AnchoredPosition: {x: 42.900005, y: -243.29999}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &184029502
@@ -792,6 +792,9 @@ MonoBehaviour:
   models:
   - {fileID: 6218123981758566550, guid: 55910884a85af0a4a8254a7f49566aa2, type: 3}
   - {fileID: 3286944204568690013, guid: b0d43e588d12a6e41a4fdd7faa94dd4c, type: 3}
+  modelNames:
+  - Bankje
+  - Prullenbak
   modelSelected: {fileID: 0}
   defMat: {fileID: 2100000, guid: 636cbb0addb3e9444b3e3af59d144eaa, type: 2}
   selMat: {fileID: 2100000, guid: c88ed1ac85ec952418a4fa10da223dba, type: 2}
@@ -978,7 +981,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 119.57, y: -248.2}
+  m_AnchoredPosition: {x: 122.90004, y: -243.29999}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1554231996
@@ -1097,7 +1100,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.73004, y: -248.2}
+  m_AnchoredPosition: {x: -117.4, y: -243.29999}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1709112925
@@ -1294,7 +1297,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40.73004, y: -248.2}
+  m_AnchoredPosition: {x: -37.4, y: -243.3}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2098476839

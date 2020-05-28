@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,6 +14,7 @@ public class UpdateUIScript : MonoBehaviour
     public Text changeObjectTextField;
     public Text objectTextField;
     public GameObject[] models;
+    public string[] modelNames;
     public GameObject modelSelected;
     public Material defMat;
     public Material selMat;
@@ -21,8 +23,11 @@ public class UpdateUIScript : MonoBehaviour
     void Start()
     {
         sTile = null;
-        Button btnRo = rotateLButton.GetComponent<Button>();
-        btnRo.onClick.AddListener(RotateL);
+        Button btnRoL = rotateLButton.GetComponent<Button>();
+        btnRoL.onClick.AddListener(RotateL);
+
+        Button btnRoR = rotateLButton.GetComponent<Button>();
+        btnRoR.onClick.AddListener(RotateR);
 
         Button btnRe = changeObjectButton.GetComponent<Button>();
         btnRe.onClick.AddListener(Change);
@@ -52,12 +57,18 @@ public class UpdateUIScript : MonoBehaviour
         td.rotateLeft();
     }
 
+    void RotateR()
+    {
+        var td = sTile.GetComponent<touchdetection>();
+        td.rotateRight();
+    }
+
     void Change()
     {
         var td = sTile.GetComponent<touchdetection>();
         if (td.spawnedO == null)
         {
-            td.spawnedO = Instantiate(models[1], td.spawnPos.position, td.spawnPos.rotation);
+            td.spawnedO = Instantiate(modelSelected, td.spawnPos.position, td.spawnPos.rotation);
         }
         else
         {
@@ -72,7 +83,32 @@ public class UpdateUIScript : MonoBehaviour
 
     void selectObject()
     {
-        objectTextField.text = "Object: \ntest";
+        int currentObjectIndex = objectIndex(modelSelected);
+        int newIndex;
+        if (currentObjectIndex == models.Length-1)
+        {
+            newIndex = 0;
+        }
+        else
+        {
+            newIndex = currentObjectIndex + 1;
+        }
+        modelSelected = models[newIndex];
+        objectTextField.text = "Object: \n"+modelNames[newIndex];
+    }
+
+    public int objectIndex(GameObject objectToFind)
+    {
+        int i = 0;
+        while (i < models.Length)
+        {
+            if (models[i] == objectToFind)
+            {
+                return i;
+            }
+            i++;
+        }
+        return -1;
     }
 
     public void updateSelectedTile(GameObject newTile)
