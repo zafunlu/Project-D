@@ -114,6 +114,9 @@ MonoBehaviour:
   cycleInt: 0
   spawnedO: {fileID: 0}
   parentTile: {fileID: 0}
+  parentTileRenderer: {fileID: 1443498903170044967}
+  defMaterial: {fileID: 2100000, guid: 636cbb0addb3e9444b3e3af59d144eaa, type: 2}
+  selMaterial: {fileID: 2100000, guid: c88ed1ac85ec952418a4fa10da223dba, type: 2}
 --- !u!1 &5916457961152058732
 GameObject:
   m_ObjectHideFlags: 0

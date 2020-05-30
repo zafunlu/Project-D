@@ -6,9 +6,11 @@ public class touchdetection : MonoBehaviour
 {
     public Transform spawnPos;
     public GameObject[] models;
-    public int cycleInt;
     public GameObject spawnedO;
     public Object parentTile;
+    public Renderer parentTileRenderer;
+    public Material defMaterial;
+    public Material selMaterial;
 
     // Update is called once per frame
     void Update()
@@ -18,11 +20,13 @@ public class touchdetection : MonoBehaviour
 
     void OnMouseDown()
     {
-        //GameObject canvasObject = GameObject.Find("Canvas");
-        //UpdateUIScript UIScript = canvasObject.GetComponent<UpdateUIScript>();
+        GameObject canvasObject = GameObject.Find("ARUICanvas");
+        UpdateUIScript UIScript = canvasObject.GetComponent<UpdateUIScript>();
+        UIScript.updateSelectedTile(gameObject);
         //UIScript.sTile = gameObject;
         //var s = canvasObject.GetComponent<UpdateUIScript>();
         //s.sTile = this;
+        /*parentTileRenderer.material = selMaterial;
         if (cycleInt < 0)
         {
 
@@ -40,13 +44,13 @@ public class touchdetection : MonoBehaviour
                 Destroy(spawnedO);
                 spawnedO = Instantiate(models[cycleInt - 1], spawnPos.position, spawnPos.rotation);
             }
-        }
+        }*/
     }
 
     public void deleteTile()
     {
         Destroy(spawnedO);
-        cycleInt = 0;
+        spawnedO = null;
     }
 
     public void rotateLeft()
