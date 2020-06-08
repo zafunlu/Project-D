@@ -69,6 +69,9 @@ public class UpdateUIScript : MonoBehaviour
         if (td.spawnedO == null)
         {
             td.spawnedO = Instantiate(modelSelected, td.spawnPos.position, td.spawnPos.rotation);
+            td.spawnedO.name = modelSelected.name;
+            td.spawnedO.tag = "ARObject";
+            td.spawnedO.transform.SetParent(sTile.transform);
         }
         else
         {
