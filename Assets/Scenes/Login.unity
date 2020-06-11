@@ -377,10 +377,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2855859401143383070, guid: 3dd65892f77e46b4cb84ea1ba9b2258c,
-          type: 3}
-        m_MethodName: LoadScene
-        m_Mode: 5
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1565,6 +1564,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1863431142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863431137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25f02d5c2686f86438716a35711fa17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loginButton: {fileID: 288293562}
+  nameField: {fileID: 1731288540}
+  passwordField: {fileID: 1202576035}
+  appProxy: {fileID: 6702950350660788014}
 --- !u!1 &1962584317
 GameObject:
   m_ObjectHideFlags: 0
@@ -1859,3 +1874,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3dd65892f77e46b4cb84ea1ba9b2258c, type: 3}
+--- !u!114 &6702950350660788014 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2855859401143383070, guid: 3dd65892f77e46b4cb84ea1ba9b2258c,
+    type: 3}
+  m_PrefabInstance: {fileID: 6702950350660788013}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b79360e3ea1ab44a9617e685e8c034a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

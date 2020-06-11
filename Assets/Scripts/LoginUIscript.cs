@@ -10,6 +10,7 @@ public class LoginUIscript : MonoBehaviour
     public Button loginButton;
     public InputField nameField;
     public InputField passwordField;
+    public AppProxy appProxy;
 
     public List<Tuple<string, string>> mockDB;
 
@@ -51,12 +52,15 @@ public class LoginUIscript : MonoBehaviour
 
     void loginClick()
     {
-        string name = nameField.GetComponentInChildren<Text>().text;
-        string password = passwordField.GetComponentInChildren<Text>().text;
-            
+        string name = nameField.GetComponentInChildren<InputField>().text;
+        string password = passwordField.GetComponentInChildren< InputField> ().text;
+
+        Debug.Log(name);
+        Debug.Log(password);
+
         if (namePasswordMatch(name,password,mockDB))
         {
-            SceneManager.LoadScene("Overzicht");
+            appProxy.LoadScene("Overzicht");
         }
         else
         {
