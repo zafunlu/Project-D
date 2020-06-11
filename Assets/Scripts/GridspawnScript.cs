@@ -17,6 +17,7 @@ public class GridspawnScript : MonoBehaviour
         centerPos.position -= Vector3.right * (size / 2) * tileSize;
         centerPos.position -= Vector3.forward * (size / 2) * tileSize;
         gridTiles = new List<List<Object>>();
+        int count = 0;
         for (int xx = 0;xx< size; xx++)
         {
             var xlist = new List<Object>();
@@ -25,14 +26,21 @@ public class GridspawnScript : MonoBehaviour
                 //gridTiles[xx][zz] = 
                 centerPos.position += Vector3.right * tileSize;
                 var tile = Instantiate(TileObject, centerPos.position,centerPos.rotation);
+                tile.name = TileObject.name + count;
+                tile.tag = "Spawned";
                 var tm = tile.transform.GetChild(0).GetComponent<TextMesh>();
                 tm.text = "x:"+xx.ToString()+"\nz:"+zz.ToString();
                 xlist.Add(tile);
+                
+                count++;
             }
             gridTiles.Add(xlist);
             centerPos.position -= Vector3.right * size * tileSize;
             centerPos.position += Vector3.forward * tileSize;
         }
+        
+        /* Start trying to load objects into the scene */
+        App.Instance.LoadObjectsToARScene();
     }
 
     // Update is called once per frame
