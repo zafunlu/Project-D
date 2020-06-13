@@ -217,6 +217,84 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa3c8b5c3e5d742c292f3820a6a9c980, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &247191698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 247191699}
+  - component: {fileID: 247191701}
+  - component: {fileID: 247191700}
+  m_Layer: 5
+  m_Name: textWachtwoordFout
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &247191699
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247191698}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1863431141}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 2.9025, y: 103.6}
+  m_SizeDelta: {x: 694.19507, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &247191700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247191698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 27
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &247191701
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247191698}
+  m_CullTransparentMesh: 0
 --- !u!1 &268800632
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,16 +455,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2855859401143383070, guid: 3dd65892f77e46b4cb84ea1ba9b2258c,
-          type: 3}
-        m_MethodName: LoadScene
-        m_Mode: 5
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Overzicht
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &288293563
@@ -1469,6 +1546,7 @@ GameObject:
   - component: {fileID: 1863431140}
   - component: {fileID: 1863431139}
   - component: {fileID: 1863431138}
+  - component: {fileID: 1863431142}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1556,6 +1634,7 @@ RectTransform:
   - {fileID: 288293561}
   - {fileID: 2106552899}
   - {fileID: 1737726817}
+  - {fileID: 247191699}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1564,6 +1643,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1863431142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863431137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25f02d5c2686f86438716a35711fa17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loginButton: {fileID: 288293562}
+  nameField: {fileID: 1731288540}
+  passwordField: {fileID: 1202576035}
+  appProxy: {fileID: 6702950350660788014}
+  passwordErrorText: {fileID: 247191700}
 --- !u!1 &1962584317
 GameObject:
   m_ObjectHideFlags: 0
@@ -1858,3 +1954,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3dd65892f77e46b4cb84ea1ba9b2258c, type: 3}
+--- !u!114 &6702950350660788014 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2855859401143383070, guid: 3dd65892f77e46b4cb84ea1ba9b2258c,
+    type: 3}
+  m_PrefabInstance: {fileID: 6702950350660788013}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b79360e3ea1ab44a9617e685e8c034a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
