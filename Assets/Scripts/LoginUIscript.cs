@@ -11,6 +11,7 @@ public class LoginUIscript : MonoBehaviour
     public InputField nameField;
     public InputField passwordField;
     public AppProxy appProxy;
+    public Text passwordErrorText;
 
     public List<Tuple<string, string>> mockDB;
 
@@ -64,7 +65,7 @@ public class LoginUIscript : MonoBehaviour
         }
         else
         {
-            //display a warning
+            passwordErrorText.text = "Onjuist wachtwoord of gebruikersnaam";
         }
     }
 }
