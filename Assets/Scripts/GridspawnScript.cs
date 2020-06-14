@@ -28,8 +28,6 @@ public class GridspawnScript : MonoBehaviour
                 var tile = Instantiate(TileObject, centerPos.position,centerPos.rotation);
                 tile.name = TileObject.name + count;
                 tile.tag = "Spawned";
-                var tm = tile.transform.GetChild(0).GetComponent<TextMesh>();
-                tm.text = "x:"+xx.ToString()+"\nz:"+zz.ToString();
                 xlist.Add(tile);
                 
                 count++;
